@@ -28,14 +28,14 @@ class Signup extends Component{
 						type="email"
 						value={this.state.email}
 						onChange={this.onChange.bind(this)}
-						placeholder="School email address" />
+						placeholder="School Email Address" />
 					<TextField
 						id="password-in"
 						type="password"
 						name="password"
 						value={this.state.password}
 						onChange={this.onChange.bind(this)}
-						placeholder="Create a password" />
+						placeholder="Password" />
 					<Button
 						id="create-account"
 						type="button"
@@ -43,7 +43,7 @@ class Signup extends Component{
 						value="Create your account" />
 				</div>
 				<Link to="/login">
-					<p className="signup__information">Already have an account? <strong>Sign in</strong></p>
+					<p className="signup__information">Already have an account? <strong>Sign In</strong></p>
 				</Link>
 			</div>
 		)
