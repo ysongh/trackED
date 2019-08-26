@@ -16,6 +16,7 @@ class Signup extends Component{
 
 	onSubmit(){
 		console.log(this.state.email, this.state.password);
+		this.props.history.push('/student');
 	}
 	render() {
 		return (
