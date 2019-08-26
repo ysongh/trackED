@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import TextField from '../common/TextField';
 import Button from '../common/Button';
@@ -41,7 +42,9 @@ class Signup extends Component{
 						onClick={this.onSubmit.bind(this)}
 						value="Create your account" />
 				</div>
-				<p className="signup__information">Already have an account? <strong>Sign in</strong></p>
+				<Link to="/login">
+					<p className="signup__information">Already have an account? <strong>Sign in</strong></p>
+				</Link>
 			</div>
 		)
 	};

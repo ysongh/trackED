@@ -40,6 +40,7 @@ body, html, #root {
 	border-radius: 4px;
 	color: white;
 	margin-top: 15px;
+	cursor: pointer;
 }
 
 .signup__title {
@@ -56,6 +57,10 @@ body, html, #root {
 	font-size: 18px;
 	line-height: 19px;
 	color: #545F7A;
+}
+
+.signup__information:hover{
+	color: #12a7e6;
 }
 
 #email-in {
