@@ -19,7 +19,7 @@ class Login extends Component{
 	}
 	render() {
 		return (
-			<div>
+			<div className="mt-48">
 				<h4 className="signup__title">Log into EdTrack</h4>
 				<div className="flexContainer">
 					<TextField 
@@ -43,7 +43,7 @@ class Login extends Component{
 						value="Login" />
 				</div>
 				<Link to="/">
-					<p className="signup__information">Don't have an account? <strong>Sign Up</strong></p>
+					<p className="signup__information mt-6">Don't have an account? <strong>Sign Up</strong></p>
 				</Link>
 			</div>
 		);

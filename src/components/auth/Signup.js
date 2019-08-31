@@ -20,7 +20,7 @@ class Signup extends Component{
 	}
 	render() {
 		return (
-			<div>
+			<div className="mt-48">
 				<h4 className="signup__title">Sign Up</h4>
 				<div className="flexContainer">
 					<TextField 
@@ -44,7 +44,7 @@ class Signup extends Component{
 						value="Create your account" />
 				</div>
 				<Link to="/login">
-					<p className="signup__information">Already have an account? <strong>Sign In</strong></p>
+					<p className="signup__information mt-6">Already have an account? <strong>Sign In</strong></p>
 				</Link>
 			</div>
 		)
