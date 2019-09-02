@@ -21,7 +21,7 @@ class Login extends Component{
 		return (
 			<div className="mt-48">
 				<h4 className="signup__title">Log into EdTrack</h4>
-				<div className="flexContainer">
+				<div className="flex flex-col items-center">
 					<TextField 
 						id="email-in"
 						name="email"

@@ -22,7 +22,7 @@ class Signup extends Component{
 		return (
 			<div className="mt-48">
 				<h4 className="signup__title">Sign Up</h4>
-				<div className="flexContainer">
+				<div className="flex flex-col items-center">
 					<TextField 
 						id="email-in"
 						name="email"
