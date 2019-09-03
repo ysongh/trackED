@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 const Grade = (props) => {
     const classAverage = 90;
@@ -6,47 +6,29 @@ const Grade = (props) => {
     const finalGrade = 87;
 
 	return (
-        <div className="row">
-            <div className="col s4" >
-                <span style={gradeStyles} > {classAverage.toFixed(2)|| '-'}</span>
+        <div className="flex flex-wrap">
+            <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+                <span className="font-family-rubik font-bold text-4xl leading-relaxed text-teal-800"> {classAverage.toFixed(2)|| '-'}</span>
                 <br/>
-                <span style={Gradelabel} >Avg Class Grade</span>
+                <span className="font-family-rubik text-sm leading-tightd text-teal-800">Avg Class Grade</span>
             </div>
-            <div className="col s4" >
-                <span style={gradeStyles} >{studentAverage.toFixed(2)|| '-'}</span>
-                <br/>
-                <span style={Gradelabel} >Avg Grade </span>
-            </div>
-            <div className="col s4" >
 
+            <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
+                <span className="font-family-rubik font-bold text-4xl leading-relaxed text-teal-800" >{studentAverage.toFixed(2)|| '-'}</span>
+                <br/>
+                <span className="font-family-rubik text-sm leading-tightd text-teal-800" >Avg Grade </span>
+            </div>
+
+            <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4">
                 {finalGrade?
-                    <span style={gradeStyles} >{finalGrade.toFixed(2) }</span>
+                    <span className="font-family-rubik font-bold text-4xl leading-relaxed text-teal-800" >{finalGrade.toFixed(2) }</span>
                     : null
                 }
                 <br/>
-                <span style={Gradelabel} >Final Grade </span>
+                <span className="font-family-rubik text-sm leading-tightd text-teal-800" >Final Grade </span>
             </div>
         </div>
 	);
-};
-
-let gradeStyles = {
-	width: "93px",
-	height: "57px",
-	fontFamily: "Rubik",
-	fontSize: "40px",
-	fontWeight: "bold",
-	lineHeight: "57px",
-	color: "#545F7A"
-};
-
-let Gradelabel = {
-	width: "80px",
-	height: "19px",
-	fontFamily: "Rubik",
-	fontSize: "14px",
-	lineHeight: "19px",
-	color: "#545F7A"
 };
 
 export default Grade;
