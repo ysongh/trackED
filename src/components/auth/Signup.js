@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import TextField from '../common/TextField';
 import Button from '../common/Button';
+import logo from '../../img/logo.png';
 
 class Signup extends Component{
 	state = {
@@ -21,6 +22,7 @@ class Signup extends Component{
 	render() {
 		return (
 			<div className="mt-48">
+				<img className="mx-auto" src={logo} alt="This is the logo of the app"/>
 				<h4 className="text-center text-4xl leading-loose text-gray-700 font-family-rubik">Sign Up</h4>
 				<div className="flex flex-col items-center">
 					<TextField 
@@ -38,7 +40,7 @@ class Signup extends Component{
 						onChange={this.onChange.bind(this)}
 						placeholder="Password" />
 					<Button
-						className="w-64 h-12 bg-green-600 rounded-lg text-white mt-4 cursor-pointer"
+						className="w-64 h-12 bg-teal-500 rounded-lg text-white mt-4 cursor-pointer"
 						type="button"
 						onClick={this.onSubmit.bind(this)}
 						value="Create your account" />
