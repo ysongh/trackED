@@ -21,30 +21,30 @@ class Signup extends Component{
 	render() {
 		return (
 			<div className="mt-48">
-				<h4 className="signup__title">Sign Up</h4>
+				<h4 className="text-center text-4xl leading-loose text-gray-700 font-family-rubik">Sign Up</h4>
 				<div className="flex flex-col items-center">
 					<TextField 
-						id="email-in"
+						className="w-64 h-10 m-2 pl-1 bg-white border border-solid border-gray-500 rounded"
 						name="email"
 						type="email"
 						value={this.state.email}
 						onChange={this.onChange.bind(this)}
 						placeholder="School Email Address" />
 					<TextField
-						id="password-in"
+						className="w-64 h-10 m-2 pl-1 bg-white border border-solid border-gray-500 rounded"
 						type="password"
 						name="password"
 						value={this.state.password}
 						onChange={this.onChange.bind(this)}
 						placeholder="Password" />
 					<Button
-						id="create-account"
+						className="w-64 h-12 bg-green-600 rounded-lg text-white mt-4 cursor-pointer"
 						type="button"
 						onClick={this.onSubmit.bind(this)}
 						value="Create your account" />
 				</div>
 				<Link to="/login">
-					<p className="signup__information mt-6">Already have an account? <strong>Sign In</strong></p>
+					<p className="text-center font-family-rubik text-lg leading-relaxed	text-gray-600 hover:text-gray-500 mt-4">Already have an account? <strong>Sign In</strong></p>
 				</Link>
 			</div>
 		)

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TextField = ({ id, name, value, type, placeholder, onChange }) => {
+const TextField = ({ className, name, value, type, placeholder, onChange }) => {
     return (
         <input
-            id={id}
+            className={className}
             name={name}
             type={type}
             value={value}
