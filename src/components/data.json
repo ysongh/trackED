@@ -1,0 +1,12 @@
+{
+    "studentData": [
+        {"grade": 70, "type": "quiz", "StudentId": 1},
+        {"grade": 65, "type": "quiz", "StudentId": 1},
+        {"grade": 75, "type": "quiz", "StudentId": 1},
+        {"grade": 80, "type": "quiz", "StudentId": 1},
+        {"grade": 60, "type": "quiz", "StudentId": 1},
+        {"grade": 97, "type": "assignment", "StudentId": 1},
+        {"grade": 80, "type": "midterm", "StudentId": 1},
+        {"grade": 50, "type": "final", 	"StudentId": 1}
+    ]
+}
