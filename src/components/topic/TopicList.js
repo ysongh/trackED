@@ -4,12 +4,14 @@ import Topic from './Topic';
 
 class TopicContainer extends Component {
     state = {
-        topics: ["Single Link List", "Graph"]
+        topics: ["Single Link List", "Binary Search Tree", "Graph", "Array", "Hash Table"]
     };
     
 	render() {
 		return (
-			<Topic topics={this.state.topics} />
+			<div className="p-6">
+				<Topic topics={this.state.topics} />
+			</div>
 		);
 	}
 }
