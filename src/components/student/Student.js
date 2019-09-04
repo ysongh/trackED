@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import defaultUserImage from '../../img/defaultUser.png';
 import LineChart from '../common/LineChart';
 import Grade from '../grade/Grade';
+import TopicList from '../topic/TopicList';
 import data from '../data.json';
 
 class Student extends Component{
@@ -19,7 +20,9 @@ class Student extends Component{
                         <Grade studentId={ data.studentData }/>
                     </center>
                 </div>
-                <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4 bg-gray-600"></div>
+                <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4 bg-gray-700">
+                    <TopicList />
+                </div>
             </div>
         );
     };
