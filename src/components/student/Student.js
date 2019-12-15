@@ -9,7 +9,7 @@ import data from '../data.json';
 class Student extends Component{
     render(){
         return (
-            <div className="flex sm:flex-row-reverse flex-wrap">
+            <div className="flex sm:flex-row-reverse flex-wrap min-h-screen">
                 <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 mb-4 bg-gray-700">
                     <TopicList />
                 </div>

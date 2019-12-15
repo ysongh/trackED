@@ -15,7 +15,7 @@ const Topic = ({topics}) => {
             <div className="flex flex-wrap">
                 {
                     topics.map((topic, indx) => (
-                        <div className="ml-4 mb-3" key={indx}>
+                        <div className="mr-4 mb-3" key={indx}>
                             <Button className={topic.isSelect ?  selectedStyle : notSelectedStyle} id={topic.id} name={topic.id} value={topic.name}/>
                         </div>
                     ))

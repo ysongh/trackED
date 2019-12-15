@@ -4,7 +4,7 @@ import { VictoryBar ,VictoryLine, VictoryChart,VictoryTooltip} from 'victory';
 const LineChart = props => {
 		return (
 			<div>
-				<div className="chart" style={{width:"60%"}}>
+				<div className="chart" style={{width:"80%"}}>
 				<VictoryChart
 					domainPadding={30}
 				>
